@@ -51,3 +51,68 @@
 .city-analysis-slide .city-context-model{flex:1;min-height:300px;height:auto}
 .city-analysis-slide .road-callouts,.city-analysis-slide .source-note{flex:none}
 #cityCanvas canvas,#terrainCanvas canvas,#modelCanvas canvas{transform:scaleX(-1)}
+
+/* Phone presentation: size each slide to the current browser viewport. */
+.orientation-hint{display:none}
+@media (max-width:1000px) and (hover:none) and (pointer:coarse){
+  :root{--presentation-nav:42px}
+  .topbar{height:var(--presentation-nav);padding:0 max(12px,env(safe-area-inset-right)) 0 max(12px,env(safe-area-inset-left));gap:12px}
+  .brand{font-size:10px;max-width:55%;min-width:0}
+  .nav-actions{gap:7px;flex-shrink:0;font-size:12px}
+  .nav-actions button{padding:7px 9px;min-height:34px;font-size:12px}
+  .progress{top:var(--presentation-nav)}
+  .slide{height:100vh;height:100dvh;min-height:0;padding:calc(var(--presentation-nav) + 18px) max(20px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));overscroll-behavior:contain}
+  .section-head{margin-bottom:12px}
+  .section-head h2{font-size:24px;margin:6px 0 8px}
+  .section-head p:not(.eyebrow){font-size:12px;line-height:1.6}
+  .eyebrow{font-size:10px}
+  .effect-slide{padding:var(--presentation-nav) 0 0;overflow:hidden}
+  .effect-full{height:calc(100vh - var(--presentation-nav));height:calc(100dvh - var(--presentation-nav))}
+  .effect-full img,.back-cover-slide .effect-full img{object-fit:contain}
+  .effect-caption{left:12px;bottom:12px;font-size:11px;padding:6px 8px}
+  .cover-slide{padding:calc(var(--presentation-nav) + 24px) 6vw 24px;background-size:contain;background-position:center calc(50% + 21px)}
+  .cover-content{width:52%;margin:auto auto auto 0}
+  .cover-content h1{font-size:clamp(18px,3vw,30px);line-height:1.5}
+  .cover-content h1 span{display:block}
+  .cover-content h1 small{margin-top:8px}
+  .cover-rule{margin-bottom:18px;height:3px;width:40px}
+  .cover-content>p{margin-top:22px;font-size:12px;line-height:1.7}
+  .terrain-model,.model-stack .real-model{height:58vh;height:58dvh;min-height:180px}
+  .terrain-toggles{flex-wrap:wrap;right:8px;left:8px;gap:4px}
+  .terrain-toggles button{font-size:10px;padding:6px}
+  .terrain-model>span,.model-status{top:auto;bottom:8px;right:8px;font-size:10px}
+  .city-analysis-slide .city-context-model{min-height:190px;flex:none;height:58dvh}
+  .real-model canvas,.terrain-model canvas{touch-action:none}
+  .model-popup{max-width:220px;min-width:170px;right:8px;bottom:30px;padding:8px}
+  .model-info{padding:12px;min-height:0}
+  .model-info strong{font-size:16px}
+  .model-info span{font-size:12px}
+  .verified-metrics{font-size:12px;min-width:580px}
+  .verified-metrics th,.verified-metrics td{padding:8px}
+  .cost-row{grid-template-columns:100px minmax(80px,1fr) 80px;gap:8px}
+  .cost-total strong{font-size:38px}
+  .footer-mark{position:static;margin-top:24px}
+}
+@media (max-width:1000px) and (hover:none) and (pointer:coarse) and (orientation:landscape){
+  .model-layout,.model-full{grid-template-columns:minmax(0,1fr) 190px}
+  .cost-layout{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px}
+  .cost-total{border-top:0;border-left:1px solid #2c5c71;padding:0 0 0 18px}
+  .indicator-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .indicator-grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .indicator-card{padding:12px;min-height:90px}
+  .indicator-card strong{font-size:18px}
+  .plan-layout{grid-template-columns:150px minmax(0,1fr)}
+  .plan-function-list{display:flex;padding:10px;gap:4px}
+  .plan-wrap,.plan-wrap img{max-height:66dvh}
+  .location-analysis-layout{grid-template-columns:minmax(0,1fr) 220px}
+  .planning-boundary-panel{height:58dvh}
+  .conclusion-grid{margin-top:20px;gap:12px}
+  .conclusion-grid div{padding:16px}
+}
+@media (max-width:1000px) and (hover:none) and (pointer:coarse) and (orientation:portrait){
+  .orientation-hint{display:block;position:fixed;z-index:22;top:48px;left:50%;transform:translateX(-50%);white-space:nowrap;padding:7px 12px;border-radius:20px;background:rgba(11,32,52,.88);color:#fff;font-size:12px;pointer-events:none}
+  .slide:not(.effect-slide){padding-top:92px}
+  .cover-content{width:100%;align-self:flex-start;margin:8vh 0 0}
+  .cover-content h1{font-size:25px}
+  .cover-slide{background-position:center bottom}
+}
