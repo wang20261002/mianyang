@@ -1,0 +1,25 @@
+.scheme2-concept-slide{padding:85px 4vw 24px}
+.scheme2-concept-slide .section-head{margin-bottom:14px}
+.scheme2-concept-crop{width:100%;aspect-ratio:2048/506;overflow:hidden;background:white}
+.scheme2-concept-crop img{width:100%;display:block}
+.cost-row small{display:block;font-size:10px;color:#91b2bf;margin-top:3px}
+.cost-row output{white-space:nowrap}
+.cost-extras{margin:8px 0 14px;display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:#bcd2dc}
+.cost-extras input{width:85px;background:#102c40;border:1px solid #5a8097;color:white;padding:5px}
+.cost-scope-note{font-size:12px;line-height:1.8;color:#aac7d2;max-width:1200px}
+.cost-total .cost-detail{font-size:12px;color:#91b2bf;margin:6px 0}
+.carbon-plan-image.scheme2-carbon{aspect-ratio:2048/1152}
+.carbon-plan-image.scheme2-carbon>img{height:100%;object-fit:contain}
+[data-title="工程造价估算"]{padding:80px 4vw 24px}
+[data-title="工程造价估算"] .section-head{margin-bottom:12px}
+[data-title="工程造价估算"] h2{font-size:34px;margin:6px 0}
+[data-title="工程造价估算"] .section-head p:not(.eyebrow){margin:7px 0;font-size:13px}
+[data-title="工程造价估算"] .cost-row{grid-template-columns:160px minmax(80px,1fr) 90px;gap:10px}
+[data-title="工程造价估算"] .cost-controls{gap:8px}
+[data-title="工程造价估算"] .cost-row label{font-size:12px;line-height:1.2}
+[data-title="工程造价估算"] .cost-row small{font-size:9px;line-height:1.2;margin-top:2px}
+[data-title="工程造价估算"] .cost-total strong{font-size:48px;margin:6px 0}
+[data-title="工程造价估算"] .cost-bars{margin-top:14px}
+[data-title="工程造价估算"] .bar{grid-template-columns:90px 1fr 85px}
+[data-title="工程造价估算"] .cost-scope-note{font-size:11px;margin-top:12px}
+@media(max-width:850px){.scheme2-concept-slide{padding:88px 20px 28px}.cost-row{grid-template-columns:120px minmax(80px,1fr) 95px}.cost-extras{gap:10px}}

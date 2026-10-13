@@ -1,0 +1,34 @@
+.deck-index-button{white-space:nowrap}
+.deck-index{position:fixed;z-index:50;top:66px;right:16px;width:min(680px,calc(100vw - 32px));max-height:calc(100dvh - 90px);overflow:auto;padding:18px;background:#102c40;color:white;border:1px solid #5a8097;box-shadow:0 10px 40px #0008}
+.deck-index[hidden]{display:none}
+.deck-index-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.deck-index-list{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.deck-index-list button{text-align:left;padding:10px;border:1px solid #537387;background:transparent;color:#dceaf0;cursor:pointer}
+.deck-index-list button.current{background:#167e93;border-color:#55d6e7}
+.scheme2-concept-crop{aspect-ratio:auto;overflow:visible;background:transparent}
+.scheme2-concept-crop img{max-height:calc(100vh - 245px);height:auto;width:100%;object-fit:contain}
+.ppt-plan-figure{position:relative;aspect-ratio:16/9;width:min(100%,calc((100vh - 68px)*16/9));line-height:0}
+.ppt-plan-figure img{width:100%;height:100%;object-fit:contain}
+.ppt-plan-figure svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#scheme2ModelCanvas{height:calc(100vh - 250px);min-height:360px}
+#scheme2ModelCanvas canvas{transform:scaleX(-1)}
+.model-query-wrap{min-width:0}
+.model-query-wrap select{width:100%;padding:9px 6px;margin-bottom:10px;background:#102c40;color:#dceaf0;border:1px solid #5a8097}
+[data-title="方案二SU三维交互模型"]{padding:82px 4vw 24px}
+[data-title="方案二SU三维交互模型"] .section-head{margin-bottom:15px}
+[data-title="方案二SU三维交互模型"] h2{font-size:34px}
+[data-title="方案二SU三维交互模型"] .section-head p:not(.eyebrow){font-size:13px}
+#scheme2ModelCanvas{height:calc(100vh - 230px);min-height:300px}
+.estimate-tabs{display:flex;gap:10px;margin:8px 0 12px}
+.estimate-tabs button{padding:8px 14px;background:transparent;color:#dceaf0;border:1px solid #5a8097;cursor:pointer}
+.estimate-tabs button[aria-selected=true]{background:#167e93}
+.estimate-panel[hidden]{display:none}
+.estimate-table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.5;color:#cfe6ec}
+.estimate-table td,.estimate-table th{padding:8px 10px;text-align:left;border-bottom:1px solid #426477}
+.estimate-table th{color:#73dfec}
+.estimate-table tr.total td{color:white;font-weight:bold;border-top:2px solid #73dfec}
+.estimate-caption{font-size:12px;line-height:1.7;color:#9cbcc9;margin:12px 0}
+.estimate-caption a{color:#9defff;text-underline-offset:3px}
+.carbon-plan-image.scheme2-carbon{aspect-ratio:16/9}
+.carbon-plan-image .carbon-pin text{font-size:25px}
+@media(max-width:700px){.deck-index-list{grid-template-columns:1fr}.brand{max-width:35%}.estimate-table{font-size:11px}.estimate-table td,.estimate-table th{padding:6px 4px}.estimate-tabs button{padding:7px 9px}}
