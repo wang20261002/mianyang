@@ -21,7 +21,7 @@ if(locationSequence&&!locationSequence.parentElement.classList.contains('locatio
 const masterplan=document.querySelector('[data-title="体块生成与总平面"] .plan-wrap img');if(masterplan){masterplan.src='assets/masterplan-entrances-v65.png';masterplan.alt='彩色总平面、园区出入口及10/11号配套设施'}
 locationSequence?.querySelector('.sequence-site')?.remove();
 const locationIntro=document.querySelector('[data-title="项目所在地定位"] .section-head p:not(.eyebrow)');
-if(locationIntro){locationIntro.classList.add('planning-land-description');locationIntro.innerHTML='规划用地性质：铁路用地兼容一类物流仓储用地及相关配套的行政办公用地。<br>规划用地面积：245460.29平方米<br>其中，A地块：68902.59平方米　B地块：173035.38平方米<br>C地块：3508.02平方米　D地块：14.30平方米';}
+if(locationIntro){locationIntro.classList.add('planning-land-description');locationIntro.innerHTML='规划用地性质：铁路用地兼容一类物流仓储用地及相关配套的行政办公用地。<br>规划用地面积：225497.54平方米<br>其中，A地块：68902.59平方米　B地块：153072.63平方米<br>C地块：3508.02平方米　D地块：14.30平方米';}
 document.querySelector('#modelCanvas .model-toggles')?.remove();
 const conclusionCards=document.querySelectorAll('[data-title="方案结论"] .conclusion-grid p');
 if(conclusionCards[0])conclusionCards[0].textContent='铁岗大道是唯一城市道路界面，也是园区主要形象展示面，园区主入口均开在此路，但铁岗大道属于快速路，后期开口需与规划与交管部门沟通，可能需要做交评论证；';
