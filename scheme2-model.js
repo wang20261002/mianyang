@@ -1,5 +1,11 @@
 (function(){
 const info=window.SCHEME2_DATA.info;
+Object.assign(info,{
+  E1a:['已建海关监管仓库','以现状资料为准','2160.71㎡','2957.13㎡','含部分双倍计容','海关中心已建指标'],
+  E1b:['已建海关生活配套（功能分类）','以现状资料为准','2761.83㎡','见海关中心综合指标','配套用地1137.30㎡；分类面积已含于海关中心总建筑面积，不作为独立单体叠加','海关中心总建筑4606.00㎡'],
+  E1d:['已建海关设备用房','地上及地下','731.46㎡','144.80㎡','地上147.42㎡；地下584.04㎡','海关中心已建指标'],
+  E1e:['已建海关卡口1、卡口2','以现状资料为准','1713.83㎡','1670.25㎡','两处卡口合并统计','海关中心已建指标']
+});
 const colors={warehouse:0x2b9dc1,office:0xed7aa8,secure:0xf3c541,hotel:0xed9f26,auto:0xe74c3c,gray:0x9aa4ad};
 function loadModelData(){
   const data=window.SCHEME2_DATA;

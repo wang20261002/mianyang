@@ -116,13 +116,3 @@
   .cover-content h1{font-size:25px}
   .cover-slide{background-position:center bottom}
 }
-/* Phone landscape entry: the button requests fullscreen + landscape where the browser permits it. */
-@media (max-width:1000px) and (hover:none) and (pointer:coarse){
-  #landscapeToggle{border-color:#5ed8e7;color:#dffcff;background:rgba(22,139,178,.22)}
-  .orientation-hint{top:calc(var(--presentation-nav) + 8px)}
-}
-@media (max-width:1000px) and (hover:none) and (pointer:coarse) and (orientation:landscape){
-  .orientation-hint{display:none}
-  .topbar{padding-left:max(8px,env(safe-area-inset-left));padding-right:max(8px,env(safe-area-inset-right))}
-  .nav-actions button{padding:5px 8px;min-height:30px}
-}

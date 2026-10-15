@@ -2,7 +2,7 @@
   const replacements = [
     ['173,035.38', '153,072.63'],
     ['173035.38', '153072.63'],
-    ['245,460.29', '225,497.54'],
+    ['245,460.29', '228,228.02'],
     ['245460.29', '225497.54']
   ];
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
