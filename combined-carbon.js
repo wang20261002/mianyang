@@ -97,7 +97,7 @@
   ['工程投资','南北零碳明细','年度运维','光伏量取依据','全园能源平衡'].forEach((name,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.id='carbon-tab-'+i;b.setAttribute('aria-controls','carbon-panel-'+i);b.setAttribute('aria-selected',String(i===0));panes[i].id='carbon-panel-'+i;panes[i].setAttribute('role','tabpanel');panes[i].setAttribute('aria-labelledby',b.id);b.textContent=name;b.onclick=()=>{panes.forEach((p,j)=>p.hidden=i!==j);[...tabbar.children].forEach((t,j)=>t.setAttribute('aria-selected',String(i===j)))};tabbar.appendChild(b)});
   const carbonInput=document.getElementById('carbonInvestment');carbonInput.step='0.01';
   function resetCarbon(){carbonInput.value=total.toFixed(2);carbonInput.dispatchEvent(new Event('input',{bubbles:true}))}
-  resetCarbon();document.getElementById('resetCost').addEventListener('click',resetCarbon);
+  resetCarbon();document.getElementById('resetCost')?.addEventListener('click',resetCarbon);
   cost.querySelector('.cost-scope-note').textContent='用地228,228.02㎡，整体建筑'+f(metrics.overall.gfa)+'㎡，其中新建'+f(metrics.newGfa)+'㎡、已建海关4,606.00㎡。两套新建工程费均按实际建筑面积计算，已建主体不重复计价；海关新增节能改造、屋顶光伏和计量接入列入零碳专项。全园零碳专项'+f(total)+'万元（含10%专项预备费）同步计入两套方案。冻库常规保温、制冷与节能增量分列。道路80,000㎡、坡道11,200㎡为暂列；新增绿化'+f(metrics.newGreen)+'㎡按新增建设用地5%控制，海关已建绿地不重复计价。未含铁路货场、土地、建设其他费、融资、全项目预备费及未列专项；本表为工程费用估算。';
   const policy=document.querySelector('[data-title="零碳建设目标"]');
   policy.querySelector('.section-head p:not(.eyebrow)').textContent='南侧B＋北侧ACD统一设计｜228,228.02㎡，约22.82公顷';
